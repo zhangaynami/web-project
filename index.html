@@ -6,9 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="./stastic/index.css">
- 
+
 </head>
 <body>
+    <canvas id="canvas" style="position: fixed;"></canvas>
+    <div class="log">
+
+        
+    </div>
+
+
     <!-- 小屏幕上水平导航栏会切换为垂直的 -->
     <nav class="navbar-dark bg-dark fixed-top">
         <ul class="nav justify-content-left">
@@ -18,13 +25,7 @@
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">尽请期待</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">尽请期待</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">尽请期待</a>
-            </li>
-        </ul>
+
 
     </nav>
     <!-- 左侧固定区域 -->
@@ -40,6 +41,8 @@
     <div class="set_container">
         <!-- 轮播图区域 -->
         <div class="pic_main">
+
+
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
@@ -50,22 +53,22 @@
                     <div class="carousel-item active">
                         <img src="./stastic/img/pic1.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                            <h5></h5>
+                            <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./stastic/img/pic2.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <h5></h5>
+                            <p></p>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img src="./stastic/img/pic3.png" class="d-block w-100" alt="...">
                         <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                            <h5></h5>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -82,127 +85,108 @@
         </div>
 
         <!-- 热门导航 -->
+        <div class="main_zone">
         <div class="web_zone">
             <div class="row title_row">
                 <h3>热门导航</h3>
             </div>
-            <div class="body_zone">        
+            <div class="body_zone ">
+                 
                 <a href="https://www.bilibili.com" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
                     <div class="mask"></div>
                     <img src="./stastic/img/billibilli_log.png" class="card-img-top" alt="...">
                     <div class="card-title">billibilli</div>
                 </a>
-                <a href="https://www.google.co.uk/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/google.png" class="card-img-top" alt="...">
-                    <div class="card-title">Google</div>
-                </a>
-                <a href="https://github.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/github.png" class="card-img-top" alt="...">
-                    <div class="card-title">github</div>
-                </a>
-                <a href="https://zsxq.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/zsx.png" class="card-img-top" alt="...">
-                    <div class="card-title">知识星球</div>
-                </a>
+                    <a href="https://www.google.co.uk/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/google.png" class="card-img-top" alt="...">
+                        <div class="card-title">Google</div>
+                    </a>
+                    <a href="https://github.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/github.png" class="card-img-top" alt="...">
+                        <div class="card-title">github</div>
+                    </a>
+                    <a href="https://zsxq.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/zsx.png" class="card-img-top" alt="...">
+                        <div class="card-title">知识星球</div>
+                    </a>
+                    
+                    
             </div>
         </div>    
         <!-- 网页设计 -->
-        <div class="web_zone">
-            <div class="row title_row">
-                <h3>网页设计</h3>
-            </div>
-            <div class="body_zone">
-                <a href="https://flatuicolors.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img//flatuicolors.png" class="card-img-top" alt="...">
-                    <div class="card-title">flatuicolors</div>
-                </a>
-                <a href="https://bootstrapdoc.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/bootstrapdoc.png" class="card-img-top" alt="...">
-                    <div class="card-title">bootstrapdoc</div>
-                </a>
-
-                <a href="https://www.siteinspire.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/siteinspire.png" class="card-img-top" alt="...">
-                    <div class="card-title">siteinspire</div>
-                </a>
-
-                <a href="https://wallhaven.cc/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/wallhaven.png" class="card-img-top" alt="...">
-                    <div class="card-title">wallhaven</div>
-                </a>
-            </div>
-        </div>
-
-        <!-- 论坛 -->
-        <div class="web_zone">
-            <div class="row title_row">
-                <h3>技术论坛</h3>
-            </div>
-            <div class="body_zone">
-                <a href="https://juejin.cn/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/xtjj.jpg" class="card-img-top" alt="...">
-                    <div class="card-title">稀土掘金</div>
-                </a>
-                <a href="https://www.runoob.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/cnjc.png" class="card-img-top" alt="...">
-                    <div class="card-title">菜鸟教程</div>
-                </a>
-            </div>
-        </div>
-        <!-- 论坛 -->
-        <div class="web_zone">
-            <div class="row title_row">
-                <h3>论坛</h3>
-            </div>
-            <div class="body_zone">
-                <a href="https://m.douban.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/dbw.png" class="card-img-top" alt="...">
-                    <div class="card-title">豆瓣</div>
-                </a>
-                <a href="https://m.weibo.cn/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
-                    <div class="mask"></div>
-                    <img src="./stastic/img/wb.png" class="card-img-top" alt="...">
-                    <div class="card-title">微博</div>
-                </a>
-            </div>
-        </div>
-
         
+            <div class="web_zone">
+                <div class="row title_row">
+                    <h3>网页设计</h3>
+                </div>
+                <div class="body_zone ">
+                    <a href="https://flatuicolors.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img//flatuicolors.png" class="card-img-top" alt="...">
+                        <div class="card-title">flatuicolors</div>
+                    </a>
+                    <a href="https://bootstrapdoc.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/bootstrapdoc.png" class="card-img-top" alt="...">
+                        <div class="card-title">bootstrapdoc</div>
+                    </a>
 
+                    <a href="https://www.siteinspire.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/siteinspire.png" class="card-img-top" alt="...">
+                        <div class="card-title">siteinspire</div>
+                    </a>
 
-        <!-- billibilli -->
-        <!-- google -->
-        <!-- github -->
-        <!-- 稀土掘金 -->
+                    <a href="https://wallhaven.cc/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/wallhaven.png" class="card-img-top" alt="...">
+                        <div class="card-title">wallhaven</div>
+                    </a>
+                </div>
+            </div>
 
-        <!-- 菜鸟教程 -->
-        <!-- bootstrap5 -->
-
-
-        <!-- 雪球 -->
-        <!-- 东方财富网 -->
-        <!-- 淘股吧 -->
-
-
+            <!-- 论坛 -->
+            <div class="web_zone">
+                <div class="row title_row">
+                    <h3>技术论坛</h3>
+                </div>
+                <div class="body_zone">
+                    <a href="https://juejin.cn/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/xtjj.jpg" class="card-img-top" alt="...">
+                        <div class="card-title">稀土掘金</div>
+                    </a>
+                    <a href="https://www.runoob.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/cnjc.png" class="card-img-top" alt="...">
+                        <div class="card-title">菜鸟教程</div>
+                    </a>
+                </div>
+            </div>
+            <!-- 论坛 -->
+            <div class="web_zone">
+                <div class="row title_row ">
+                    <h3>论坛</h3>
+                </div>
+                <div class="body_zone">
+                    <a href="https://m.douban.com/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/dbw.png" class="card-img-top" alt="...">
+                        <div class="card-title">豆瓣</div>
+                    </a>
+                    <a href="https://m.weibo.cn/" class="card" onmouseover="inzoom(this)" onmouseleave="outzoom(this)">
+                        <div class="mask"></div>
+                        <img src="./stastic/img/wb.png" class="card-img-top" alt="...">
+                        <div class="card-title">微博</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+   
     </div>
-
-
-
-
-
-
-
-
 
     <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
     <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
@@ -210,5 +194,8 @@
     <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
     <script src="./stastic/js/in_out_zone.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/three.js/0.150.1/three.js"></script>
+    <script src="./stastic/js/star.js"></script>
+
 </body>
 </html>
