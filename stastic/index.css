@@ -83,8 +83,9 @@ img{
 }
 .body_zone {
     
-    
-    width: 100%;
+   
+  width:80%;
+   height: 100%;
     white-space: nowrap;
             /* 防止子元素换行 */
     overflow-x: auto;
@@ -119,7 +120,7 @@ img{
 
 .body_zone .card {
     
-    width: 280px;
+    width: 18rem;
     height: 10rem;
     margin: 1rem 1rem 0 1rem;
    border: 0;
