@@ -83,9 +83,7 @@ img{
 }
 .body_zone {
     
-   
-  width:80%;
-   height: 100%;
+
     white-space: nowrap;
             /* 防止子元素换行 */
     overflow-x: auto;
