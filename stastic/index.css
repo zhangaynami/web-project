@@ -81,17 +81,8 @@ img{
   
     width: 100%;
 }
-.body_zone {
-    
 
-    white-space: nowrap;
-            /* 防止子元素换行 */
-    overflow-x: auto;
-            /* 启用水平滚动条 */
-    /* z-index: 990; */
-    
-   
-}
+
         /* 修改滚动条的样式 */
 .body_zone::-webkit-scrollbar {
    
