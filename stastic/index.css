@@ -67,7 +67,7 @@ img{
     display: inline-block;
 }
 .doc-target a:hover{
-    color: rgb(179, 255, 0);
+    color: rgb(17, 0, 255);
 }
 .time_zone {
     
@@ -132,7 +132,7 @@ img{
 
 .body_zone .card {
     
-    width: 13rem;
+    width: 13rem; 
     height: 8rem;
     margin: 1rem 1rem 0 1rem;
    border: 0;
