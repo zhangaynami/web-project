@@ -52,6 +52,23 @@ img{
     top:0;
     
 }
+
+.doc-target {
+    width: 100%;
+    margin-top: 16rem;
+    margin-left: 3rem;
+    
+}
+
+.doc-target a {
+    color: #2d3436;
+    text-decoration: none;
+    padding-top:5px;
+    display: inline-block;
+}
+.doc-target a:hover{
+    color: rgb(179, 255, 0);
+}
 .time_zone {
     
     margin-top: 5rem;
