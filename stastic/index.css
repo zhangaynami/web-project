@@ -25,6 +25,7 @@ img{
     width: 100%;
     height: 100%;
     flex: 0 0 auto;
+
 }
 
 .justify-content-center a:hover{
@@ -89,6 +90,18 @@ img{
     color: #f5f6fa;
     padding-top: 1rem;
 }
+.pic_zone{
+    display: block;
+    position: absolute;
+    bottom: 5rem;
+    height: 8rem;
+    width: 8rem;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
 .pic_main {
     width: 40rem;
     
@@ -132,23 +145,25 @@ img{
 
 .body_zone .card {
     
-    width: 13rem; 
-    height: 8rem;
-    margin: 1rem 1rem 0 1rem;
-   border: 0;
+    width: 5rem; 
+    height: 7rem;
+    margin: 1rem 2rem 0 2rem;
+    border: 0;
     display: inline-block;
-    /* position: relative; */
-   overflow: hidden;
-    text-decoration: none;
+    position: relative;   
+    background:none;
     /* box-sizing: border-box; */
     
     
 }
-
+.body_zone img {
+    width: 5rem;
+    height: 5rem;
+}
 .card-title{
-    color: rgba(241, 242, 246, 1.0);
+    color: rgb(214, 206, 206);
     position: absolute;
-    bottom: 1rem;
+    
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.2rem;
@@ -162,18 +177,7 @@ img{
     left: 42rem;
     position: absolute;
 }
-.mask {
 
-    height: 70%;
-    width: 100%;
-    content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 40%);
-    display: inline-block;
-    top: auto;
-    bottom: 0;
-    position: absolute;
-    z-index: 20;
-}
 
 .main_zone {
     width: 100%;
