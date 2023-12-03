@@ -27,13 +27,7 @@ img{
     flex: 0 0 auto;
 
 }
-.canvas{
-    background-image: url('./img/background1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 20;
 
-}
 .justify-content-center a:hover{
     color: azure;
     background-color: red;
