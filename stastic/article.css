@@ -1,0 +1,38 @@
+.web-container {
+    
+    padding-top: 7rem;
+    background-color:rgba(164, 176, 190, 0.3);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.title-zone{
+    height: 3rem;
+    display: inline-block;
+    
+    
+}
+.title-zone img{
+    width: 3rem;
+    height: 3rem;
+    /* display: inline-block; */
+    float: left;
+}
+h2 {
+    color: aliceblue;
+    float: left;
+    line-height: 3rem;
+    margin-left: 2rem;
+}
+
+.article-zone {
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+.article-zone a {
+    list-style: none;
+    
+}

@@ -27,7 +27,13 @@ img{
     flex: 0 0 auto;
 
 }
+.canvas{
+    background-image: url('./img/background1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20;
 
+}
 .justify-content-center a:hover{
     color: azure;
     background-color: red;
@@ -81,6 +87,7 @@ img{
 .doc-target a:hover{
     color: rgb(17, 0, 255);
 }
+
 .time_zone {
     
     margin-top: 5rem;
@@ -104,7 +111,7 @@ img{
 .pic_zone{
     display: block;
     position: absolute;
-    bottom: 5rem;
+    bottom: 6rem;
     height: 8rem;
     width: 8rem;
     
@@ -183,7 +190,7 @@ img{
 
 
 .set_container{
-    top: 4rem;
+    top: 7rem;
     width: 100%;
     left: 42rem;
     position: absolute;
