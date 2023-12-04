@@ -3,6 +3,8 @@ body {
     width: 100%;
     height: 100%;
     overflow-x: hidden;
+    position: relative;
+    
 }
 * {
     margin: 0;
@@ -36,10 +38,30 @@ a{
     transform: translateX(-50%);
     padding-left: 2rem;
     padding-right: 2rem;
+    overflow-y: auto;
 }
+
+.web-container::-webkit-scrollbar {
+
+    height: 6px;
+    border-radius: 5px;
+    width: 3px;
+
+}
+
+.web-container::-webkit-scrollbar-thumb {
+    background-color: rgba(30, 39, 46, 1.0);
+    border-radius: 5px;
+}
+
+.web-container::-webkit-scrollbar-track {
+    background-color:rgba(128, 142, 155, 1.0);
+}
+
 .title-zone{
     height: 3rem;
     display: inline-block;
+    
 }
 .title-zone img{
     width: 3rem;
@@ -57,6 +79,8 @@ h2 {
 .article-zone {
     margin-top: 2rem;
     margin-left: 3rem;
+    margin-right: 3rem;
+    
 }
 .article-zone a {
     list-style: none;
@@ -70,4 +94,25 @@ h2 {
     line-height: 4rem;
     font-size: 18px;
     color: #f5f6fa;
+}
+
+span {
+    color: aliceblue;
+}
+
+.my-code {
+    color: rgba(164, 176, 190, 1.0);
+    text-align: left;
+    padding-left: 0;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color:rgba(30, 39, 46, 0.4);
+}
+.bottom-container{
+    width: 100%;
+    height: 10rem;
+    
+    border-top: 1px solid black;
+    margin-top: 3rem;
+
 }

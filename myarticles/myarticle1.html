@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myweb</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../stastic/article.css">
+</head>
+
+<body>
+    <canvas id="canvas" style="position: fixed;">
+
+    </canvas>
+    <div class="log">
+
+    </div>
+
+
+    <!-- 小屏幕上水平导航栏会切换为垂直的 -->
+    <nav class="navbar-dark bg-dark fixed-top" style="height: 4rem;">
+        <ul class="nav justify-content-left">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">首页</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../article.html">文章</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="web-container">
+        <div class="title-zone">
+
+            <img src="../stastic/img/pm.png">
+            <h2>node.js学习(1)</h2>
+        </div>
+        <div class="article-zone">
+            <span>node是什么？node可以看作是服务器端的JAVASCRIPT。除了对文件进行操作，NODE可以连接数据库，多线程等。</span>
+            <br><br>
+            <span>node.js不支持BOM和DOM的API，但可以使用console和定时器API。node.js的顶级对象为global，也可以用globalThis访问顶级对象</span>
+            <br><br>
+            <span>Buffer缓冲区，是一段处理二进制数据的内存空间。</span>
+            <br><br>
+            <span>创建Buffer的三种方法：</span>
+            <br><br>
+            <div class="my-code">
+                <pre>
+
+    // alloc创建 会清空旧的内存空间
+    let buf = Buffer.alloc(10);
+    console.log(buf)
+
+    // allocUnsafe 可能包含旧的内存空间
+    let buf2 = Buffer.allocUnsafe(10);
+    console.log(buf2)
+
+    // from 字符串创建
+    let buf3 = Buffer.from("hello")
+    console.log(buf3)
+    //通过数组创建 Buffer
+    let buf_4 = Buffer.from([105, 108, 111, 118, 101, 121, 111, 117]);
+    console.log(buf3)
+                </pre>
+            </div>
+
+            <br><br>
+            <span>buffer与字符串转换：</span>
+            <br><br>
+            <div class="my-code">
+                <pre>
+            
+    let buf_4 = Buffer.from([105, 108, 111, 118, 101, 121, 111, 117]);
+    console.log(buf_4.toString())
+                </pre>
+            </div><br>
+        <span>对buffer进行读写:</span>
+            <br><br>
+            <div class="my-code">
+                <pre>
+            
+    //读取
+    console.log(buf_3[1]);
+    // 修 改
+    buf_3[1] = 97;
+    //查看字符串结果
+    console.log(buf_3.toString());
+                            </pre>
+            </div><br>
+
+            <br>
+            <span>注意:<br><br>
+             1. 如果修改的数值超过 255 ，则超过 8 位数据会被舍弃<br>
+             2. 一个utf-8的字符一般占 3 个字节
+            </span>
+
+
+
+        </div>
+        <div class="bottom-container"></div>
+    </div>
+
+    <!--  popper.min.js 用于弹窗、提示、下拉菜单 -->
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="../stastic/js/in_out_zone.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/three.js/0.150.1/three.js"></script>
+    <script src="../stastic/js/star.js"></script>
+
+</body>
+
+</html>
